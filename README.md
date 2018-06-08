@@ -1,1 +1,3 @@
-Hackintosh EFI for Asus P6T SE, Intel Core i7 920 (OC)
+# Hackintosh EFI
+
+Updating from [Dids / *clover-builder*](https://github.com/Dids/clover-builder/releases/latest)
