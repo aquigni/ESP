@@ -2,125 +2,174 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#BootGraphics</key>
-	<dict>
-		<key>#DefaultBackgroundColor</key>
-		<string>0x000000</string>
-		<key>EFILoginHiDPI</key>
-		<integer>1</integer>
-		<key>UIScale</key>
-		<integer>1</integer>
-	</dict>
 	<key>ACPI</key>
 	<dict>
 		<key>DSDT</key>
 		<dict>
-			<key>#Fixes</key>
-			<dict>
-				<key>AddDTGP_0001</key>
-				<true/>
-				<key>AddHDMI_8000000</key>
-				<true/>
-				<key>AddPNLF_1000000</key>
-				<true/>
-				<key>DeleteUnused_400000</key>
-				<true/>
-				<key>FIX_ACST_4000000</key>
-				<true/>
-				<key>FIX_ADP1_800000</key>
-				<true/>
-				<key>FIX_RTC_20000</key>
-				<true/>
-				<key>FIX_S3D_2000000</key>
-				<true/>
-				<key>FixDarwin_0002</key>
-				<true/>
-				<key>FixDisplay_0100</key>
-				<true/>
-				<key>FixFirewire_0800</key>
-				<true/>
-				<key>FixHPET_0010</key>
-				<true/>
-				<key>FixIPIC_0040</key>
-				<true/>
-				<key>FixLAN_2000</key>
-				<true/>
-				<key>FixRegions_10000000</key>
-				<true/>
-				<key>FixSBUS_0080</key>
-				<true/>
-				<key>FixShutdown_0004</key>
-				<true/>
-				<key>FixUSB_1000</key>
-				<true/>
-			</dict>
 			<key>Debug</key>
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddDTGP_0001</key>
+				<key>AddDTGP</key>
 				<true/>
-				<key>AddHDMI_8000000</key>
+				<key>AddHDMI</key>
 				<true/>
-				<key>AddIMEI_80000</key>
-				<false/>
-				<key>AddMCHC_0008</key>
-				<false/>
-				<key>AddPNLF_1000000</key>
+				<key>AddPNLF</key>
 				<true/>
-				<key>DeleteUnused_400000</key>
+				<key>DeleteUnused</key>
 				<true/>
-				<key>FIX_ACST_4000000</key>
+				<key>FixDarwin7</key>
 				<true/>
-				<key>FIX_ADP1_800000</key>
+				<key>FixDisplay</key>
 				<true/>
-				<key>FIX_INTELGFX_100000</key>
-				<false/>
-				<key>FIX_RTC_20000</key>
+				<key>FixHDA</key>
 				<true/>
-				<key>FIX_S3D_2000000</key>
+				<key>FixHPET</key>
 				<true/>
-				<key>FIX_TMR_40000</key>
+				<key>FixIPIC</key>
 				<true/>
-				<key>FIX_WAK_200000</key>
+				<key>FixLAN</key>
 				<true/>
-				<key>FakeLPC_0020</key>
-				<false/>
-				<key>FixAirport_4000</key>
-				<false/>
-				<key>FixDarwin7_10000</key>
+				<key>FixRegions</key>
 				<true/>
-				<key>FixDarwin_0002</key>
-				<false/>
-				<key>FixDisplay_0100</key>
+				<key>FixSBUS</key>
 				<true/>
-				<key>FixFirewire_0800</key>
-				<false/>
-				<key>FixHDA_8000</key>
+				<key>FixShutdown</key>
 				<true/>
-				<key>FixHPET_0010</key>
-				<true/>
-				<key>FixHeaders_20000000</key>
-				<true/>
-				<key>FixIDE_0200</key>
-				<false/>
-				<key>FixIPIC_0040</key>
-				<true/>
-				<key>FixLAN_2000</key>
-				<true/>
-				<key>FixRegions_10000000</key>
-				<true/>
-				<key>FixSATA_0400</key>
-				<false/>
-				<key>FixSBUS_0080</key>
-				<true/>
-				<key>FixShutdown_0004</key>
-				<true/>
-				<key>FixUSB_1000</key>
+				<key>FixUSB</key>
 				<true/>
 			</dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>change _OSI to XOSI (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _DSM to XDSM (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0 to EC (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch) (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					T1NJRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNJRA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change H_EC to EC (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SF9FQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01 (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SF9FQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02 (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU (RehabMan)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change PEGP to GFX1</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UEVHUA==
+					</data>
+					<key>Replace</key>
+					<data>
+					R0ZYMQ==
+					</data>
+				</dict>
+			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
@@ -143,6 +192,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -151,6 +202,8 @@
 			<false/>
 			<key>Generate</key>
 			<dict>
+				<key>APSN</key>
+				<true/>
 				<key>CStates</key>
 				<true/>
 				<key>PStates</key>
@@ -161,13 +214,17 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v debug=0x100 keepsyms=1</string>
+		<string>-v keepsyms=1 debug=0x100 -lilubetaall -ngfxbeta</string>
+		<key>CustomLogo</key>
+		<string>Alternate</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
+		<key>RtcHibernateAware</key>
+		<true/>
 		<key>Timeout</key>
 		<integer>20</integer>
 	</dict>
@@ -193,7 +250,11 @@
 			<true/>
 			<key>FixOwnership</key>
 			<true/>
+			<key>HighCurrent</key>
+			<true/>
 			<key>Inject</key>
+			<true/>
+			<key>NameEH00</key>
 			<true/>
 		</dict>
 	</dict>
@@ -203,20 +264,24 @@
 		<true/>
 		<key>TextOnly</key>
 		<true/>
-		<key>Theme</key>
-		<string>embedded</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>#KextsToPatch</key>
+		<key>AppleRTC</key>
+		<false/>
+		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>patch AppleAHCIPort for ICH10</string>
+				<string>Fix I/O error for ICH10</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				RYX2D5XCiciD4P5mhcl4D4TSdQs=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -226,11 +291,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HotPlug patch AppleAHCIPort for ICH10</string>
+				<string>Fix I/O error hotplug for ICH10</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				icglQGACAD1AIAAAdQyB4b9///+Ji1EBAAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -241,10 +310,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>External icons patch</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -255,10 +328,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>MacPro no ECC</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				DAAADwAAAACuAQALCwAACw==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleTyMCEDriver</string>
 				<key>Replace</key>
@@ -268,77 +345,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>TRIM function for non-Apple SSDs</string>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Find</key>
 				<data>
-				QVBQTEUgU1NEAA==
+				AEFQUExFIFNTRAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAA==
-				</data>
-			</dict>
-		</array>
-		<key>AppleRTC</key>
-		<true/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>patch AppleAHCIPort for ICH10</string>
-				<key>Find</key>
-				<data>
-				RYX2D5XCiciD4P5mhcl4D4TSdQs=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				iciD4P5mhckPmMFBCMyQkJCQdQs=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>MacPro no ECC</string>
-				<key>Find</key>
-				<data>
-				DAAADwAAAACuAQALCwAACw==
-				</data>
-				<key>Name</key>
-				<string>AppleTyMCEDriver</string>
-				<key>Replace</key>
-				<data>
-				DACqqqqqqqqqqqqqqqqqCw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>TRIM function for non-Apple SSDs</string>
-				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
@@ -348,48 +368,40 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x2E7</string>
+		<string>0x3E7</string>
 		<key>MLB</key>
-		<string>C0241540410FJYY1R</string>
+		<string>C072354008TF1HCA1</string>
 		<key>ROM</key>
-		<string>0c4de983ab30</string>
+		<string>003EE195E31E</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>#Family</key>
-		<string>Mac Pro</string>
-		<key>#FirmwareFeatures</key>
-		<string>0xe00de137</string>
-		<key>#ModelId</key>
-		<string>F9VM</string>
-		<key>#PlatformFeature</key>
-		<string>0xffff</string>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>04/11/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP61.88Z.0120.B00.1708080652</string>
+		<string>MP61.88Z.0124.B00.1804111223</string>
 		<key>Board-ID</key>
 		<string>Mac-F60DEB81FF30ACF6</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02140302D5DMT31M</string>
 		<key>BoardType</key>
 		<integer>11</integer>
 		<key>BoardVersion</key>
-		<string>MacPro6,1</string>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>Pro-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x02</string>
+		<key>Family</key>
+		<string>MacPro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xe907f537</string>
+		<string>0xE80FE137</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xff1fff3f</string>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -401,14 +413,16 @@
 			<key>SlotCount</key>
 			<integer>6</integer>
 		</dict>
+		<key>Mobile</key>
+		<false/>
 		<key>PlatformFeature</key>
-		<string>0x4</string>
+		<string>0x04</string>
 		<key>ProductName</key>
 		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
-		<string>C02KV9QZF693</string>
+		<string>F5KVP0H3F694</string>
 		<key>SmUUID</key>
-		<string>9140D75A-DAD7-41F2-B2D9-ECFC6BBF301F</string>
+		<string>3BCFB53F-D5F9-4359-AA4E-90942834A9F9</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
@@ -416,16 +430,14 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>#NvidiaWeb</key>
-		<false/>
-		<key>CustomUUID</key>
-		<string>9140D75A-DAD7-41F2-B2D9-ECFC6BBF301F</string>
 		<key>ExposeSysVariables</key>
 		<true/>
 		<key>InjectKexts</key>
 		<true/>
 		<key>InjectSystemID</key>
 		<true/>
+		<key>NvidiaWeb</key>
+		<false/>
 	</dict>
 </dict>
 </plist>

@@ -12,7 +12,7 @@
 	</data>
 	<key>Clover.LogLineCount</key>
 	<data>
-	MjAw
+	MjA0OA==
 	</data>
 	<key>EFILoginHiDPI</key>
 	<data>
@@ -24,36 +24,46 @@
 	</data>
 	<key>SystemAudioVolume</key>
 	<data>
-	AQ==
+	gA==
 	</data>
 	<key>SystemAudioVolumeDB</key>
 	<data>
-	/Q==
-	</data>
-	<key>bootercfg</key>
-	<data>
-	KAA=
+	9A==
 	</data>
 	<key>csr-active-config</key>
 	<data>
-	5wIAAA==
+	5wMAAA==
+	</data>
+	<key>efi-backup-boot-device</key>
+	<data>
+	PGFycmF5PjxkaWN0PjxrZXk+SU9NYXRjaDwva2V5PjxkaWN0PjxrZXk+SU9Qcm92aWRl
+	ckNsYXNzPC9rZXk+PHN0cmluZz5JT01lZGlhPC9zdHJpbmc+PGtleT5JT1Byb3BlcnR5
+	TWF0Y2g8L2tleT48ZGljdD48a2V5PlVVSUQ8L2tleT48c3RyaW5nPjVCODIxMUU4LTgx
+	MUYtNDk5Ni1BQjJFLTc1MzFFRjExNjExMDwvc3RyaW5nPjwvZGljdD48L2RpY3Q+PC9k
+	aWN0PjwvYXJyYXk+
+	</data>
+	<key>efi-backup-boot-device-data</key>
+	<data>
+	AgEMANBBAwoAAAAAAQEGAAIfAxIKAAAAAAAAAAQBKgADAAAAiOo+JQAAAAAAAAQAAAAA
+	AOgRglsfgZZJqy51Me8RYRACAn//BAA=
 	</data>
 	<key>efi-boot-device</key>
 	<data>
 	PGFycmF5PjxkaWN0PjxrZXk+SU9NYXRjaDwva2V5PjxkaWN0PjxrZXk+SU9Qcm92aWRl
 	ckNsYXNzPC9rZXk+PHN0cmluZz5JT01lZGlhPC9zdHJpbmc+PGtleT5JT1Byb3BlcnR5
-	TWF0Y2g8L2tleT48ZGljdD48a2V5PlVVSUQ8L2tleT48c3RyaW5nPkJGMUFCNUFCLUND
-	RDUtNDNBRi04NkE3LTZCRDhCNzc4NUIxMjwvc3RyaW5nPjwvZGljdD48L2RpY3Q+PC9k
+	TWF0Y2g8L2tleT48ZGljdD48a2V5PlVVSUQ8L2tleT48c3RyaW5nPkYxNDE3QTQyLUFE
+	MDMtNDZFMS05MDNCLTlFQThCNDM0QzA4Qjwvc3RyaW5nPjwvZGljdD48L2RpY3Q+PC9k
 	aWN0PjwvYXJyYXk+
 	</data>
 	<key>efi-boot-device-data</key>
 	<data>
-	AgEMANBBCAoAAAAAAQEGAAIfAQQVAMX6Mc9OwtIRhfMAoMk+yTuBBAEqAAMAAACI6j4l
-	AAAAAAAABAAAAAAAq7Uav9XMr0OGp2vYt3hbEgICf/8EAA==
+	AgEMANBBCAoAAAAAAQEGAAIfAwUGAIYABAEqAAIAAAAoQAYAAAAAAOAfMjoAAAAAQnpB
+	8QOt4UaQO56otDTAiwICBAMkAPf8dL58C/NJkUcB9AQuaELvWxC17ZYyOLsSrbzbidk3
+	f/8EAA==
 	</data>
 	<key>fakesmc-key-#KEY-ui32</key>
 	<data>
-	AAAAEQ==
+	AAAAEA==
 	</data>
 	<key>fakesmc-key-$Adr-ui32</key>
 	<data>
@@ -86,10 +96,6 @@
 	<key>fakesmc-key-MSFW-ui8</key>
 	<data>
 	AQA=
-	</data>
-	<key>fakesmc-key-MSLD-ui8</key>
-	<data>
-	AA==
 	</data>
 	<key>fakesmc-key-MSPS-ui16</key>
 	<data>
@@ -125,7 +131,35 @@
 	</data>
 	<key>fmm-computer-name</key>
 	<data>
-	SGFja1Bybw==
+	QWxleGFuZGVy4oCZcyBNYWMgUHJv
+	</data>
+	<key>fmm-mobileme-token-FMM</key>
+	<data>
+	YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4PFhcOGA4ZGhscHR9fEA91bnJlZ2lzdGVyU3Rh
+	dGVYdXNlckluZm9ZYXV0aFRva2VuXxARb3NVc2VyRGlzYXBwZWFyZWReZGlzYWJsZUNv
+	bnRleHRWdXNlcmlkXWVuYWJsZUNvbnRleHRYdXNlcm5hbWVYcGVyc29uSURXYWRkVGlt
+	ZVRndWlkXxASZW5hYmxlZERhdGFjbGFzc2VzXxATZGF0YWNsYXNzUHJvcGVydGllcxAA
+	0xAREhMUFV8QFUluVXNlT3duZXJEaXNwbGF5TmFtZV8QE0luVXNlT3duZXJGaXJzdE5h
+	bWVfEBJJblVzZU93bmVyTGFzdE5hbWVfEBNBbGV4YW5kZXIgVWxhbm92c2t5WUFsZXhh
+	bmRlcllVbGFub3Zza3lfEMxFQUFUQUFBQUJMd0lBQUFBQUZzWnREY1JEbWR6TG1samJH
+	OTFaQzVoZFhSb3ZRQW5TVmR4bklwUkRBY0JZUzZXZGhWRjJCNlZaVzNmd0I3T1NXbzJl
+	ZzN2Sk82cEFBX2ktVnZhZHZLTU1VUHlwM3J3Y1h3Q2NYN3Fya0VFVzdDUmtXUWU2T2hr
+	X19mSjBYTTV0Q2t2Q3BXWWw3YkZ6b0hIcWQyX2RPWjRBRUNSNW51Z1lQTnB0cW0wazZz
+	c3VRTk5qMzFaVjFQUXp3fn4JEQH1XxARZGl6enphc3RlckBtZS5jb21aMTExMjIyNzIz
+	OCNB1sZtNjOPKl8QJDUxNDU3OUMwLTc4RTItNEZBMi05QTAzLUUyN0FDMkNGRDczRqEe
+	XxAhY29tLmFwcGxlLkRhdGFjbGFzcy5EZXZpY2VMb2NhdG9y0R4g1CEiIyQlJicoVmFw
+	c0Vudlhob3N0bmFtZV1hdXRoTWVjaGFuaXNtVnNjaGVtZVpQcm9kdWN0aW9uXxATcDUw
+	LWZtaXAuaWNsb3VkLmNvbVV0b2tlblVodHRwcwAIACMANQA+AEgAXABrAHIAgACJAJIA
+	mgCfALQAygDMANMA6wEBARYBLAE2AUACDwIQAhMCJwIyAjsCYgJkAogCiwKUApsCpAKy
+	ArkCxALaAuAAAAAAAAACAQAAAAAAAAApAAAAAAAAAAAAAAAAAAAC5g==
+	</data>
+	<key>good-samaritan-message</key>
+	<data>
+	VGhpbmsgRGlmZmVyZW50IQ==
+	</data>
+	<key>prev-lang:kbd</key>
+	<data>
+	ZW4tUlU6MA==
 	</data>
 	<key>security-mode</key>
 	<string>none</string>
